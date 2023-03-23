@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nome</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="query.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 <body>
     <header>
-        Teste
+        <h1>Nome da Loja</h1>
 
+        <i id="burger" class="material-symbols-outlined" onclick="burger()">menu</i>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Nossa História</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
 
@@ -22,4 +34,15 @@
 
     </footer>
 </body>
+<script>
+    function burger(){
+        if(menu.style.display == 'block'){
+            menu.style.display = 'none'
+        }
+        else{
+            menu.style.display = 'block'
+        }
+             
+    }
+</script>
 </html>
