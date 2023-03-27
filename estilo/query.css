@@ -11,6 +11,15 @@
         border: 0px;    
     }
     main{
-        width: 768px;
+        margin: auto;
+    }
+    footer{
+        height: 15vh;
+    }
+    div#feminino{
+        display: block;
+    }
+    div#masculino{
+        display: block;
     }
 }

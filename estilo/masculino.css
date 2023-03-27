@@ -5,10 +5,10 @@
 
 :root{
     --cor0: #0f1108;
-    --cor1: #241909;
+    --cor1: #e2e2c0;
     --cor2: #645853;
     --cor3: #cad8de;
-    --cor4: #fc9e4f;
+    --cor4: #f8a867;
     --cor5: lightgrey;
     --font: 'Poppins', sans-serif;
 }
@@ -63,4 +63,28 @@ header a{
 }
 header > menu > ul > li > a:hover{
     background-color: orange;
+}
+
+div.roupa{
+    background: url(imagem/exemploroupa.png) top right no-repeat fixed;
+}
+
+footer{
+    background-color: var(--cor4);
+    height: 20vh;
+}
+footer h2{
+    padding: 5px;
+}
+footer i{
+    color: var(--cor0);
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+footer input{
+    transform: translate(0,-30%);
+    width: 30vw;
+    padding: 5px;
+    background-color: var(--cor3);
 }
