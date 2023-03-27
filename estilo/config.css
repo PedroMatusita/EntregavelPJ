@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-
+/* Config gerais */
 :root{
     --cor0: #0f1108;
     --cor1: #e2e2c0;
@@ -23,6 +23,8 @@ body{
     font-family: var(--font);
 }
 
+
+/* Cabeçalho */
 header{
     background-color: var(--cor4);
     padding-top: 5px;
@@ -65,59 +67,50 @@ header > menu > ul > li > a:hover{
     background-color: orange;
 }
 
+
+/* Main */
+
 section{
     height: 60vh;
-}
-section.cor{
-    background-color: var(--cor2);
-    color: var(--cor3);
-    height: 60vh;
+    width: 100vw;
 }
 section.img{
-}
-div.imagem{
-    background-size: cover;
-    color: var(--cor0);
-    padding-left: 20px;
-}
-div.texto{
     background-color: var(--cor1);
-    height: 60vh;
+    background: var(--cor1) url(mulher.jpg) right center no-repeat fixed;
+
 }
-div#feminino{
-    background-color: var(--cor1);
-    background: url(imagem/mulher.jpg) top right no-repeat fixed;
-    display: none;
-}
-div#masculino{
-    background: url(imagem/homem.jpg) top right no-repeat fixed;
-    background-color: var(--cor1); 
-    display: none;
-}
-section#maisvendidas{
+section.no-img{
+    background-color: var(--cor2);
     text-align: right;
 }
-section  h1{
-    font-size: 2em;
-    padding: 20px;
+section h1{
+    font-size: 2.5em;
+    padding: 15px;
 }
-main > section  a{
-    text-decoration: none;
-    font-size: 1.5em;
-    margin-top: 10px;
-    margin-left: 20px;
-    padding: 5px;
-}
-section.img  a{
-    background-color: var(--cor4);
-    color: var(--cor0);
-}
-section#maisvendidas > a{
-    background-color: var(--cor3);
-    color: var(--cor2);
-    margin-right: 20px;
+section.no-img h1{
+    color: var(--cor3);
 }
 
+/* Links de Acesso */
+section a{
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px;
+}
+section.img a{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    margin-left: 15px;
+}
+section.no-img a{
+    background-color: var(--cor3);
+    color: var(--cor2);
+    margin-right: 15px;
+}
+
+/* Imagens */
+
+/* Footer */
 footer{
     background-color: var(--cor4);
     height: 20vh;
